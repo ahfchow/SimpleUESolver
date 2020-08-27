@@ -108,8 +108,9 @@ def golden_section(lower, upper, merror, tf, fp, fp_dir):
 
 
 
-# MAIN SCRIPT
-# ------------
+
+# MAIN SCRIPT STARTS HERE ...  
+# ---------------------------- 
 
 # Importing network setting
 # importing link configuration
