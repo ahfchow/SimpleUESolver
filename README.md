@@ -17,7 +17,7 @@ Sheffi, Y. (1985) Urban Transportation Networks. Prentice-Hall, Inc. Englewood C
 
 
 2. OD_multi.csv 
- + Origin-destination (OD) pairs in the network: 
+- Origin-destination (OD) pairs in the network: 
 
   - 1st Column: 'origin' of the OD pair
   - 2nd Column: 'destination' of the OD pair 
@@ -25,7 +25,7 @@ Sheffi, Y. (1985) Urban Transportation Networks. Prentice-Hall, Inc. Englewood C
 
 
 3. Paths_multi.csv
- + Path set in the network: 
+- Path set in the network: 
 
   - 1st Column: 'OD-pair' the path is connecting 
   - 2nd Column onward: Link sequence of the path (with '0' in the ending columns indicating end of the path)
