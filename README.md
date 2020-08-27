@@ -8,7 +8,7 @@ Sheffi, Y. (1985) Urban Transportation Networks. Prentice-Hall, Inc. Englewood C
 
 ## Input files: 
 1. NetworkConfig_multi.csv 
- > Link set in the network (specified by BPR function): 
+ + Link set in the network (specified by BPR function): 
  
   - 1st Column: 'starting node' of the link 
   - 2nd Column: 'ending node' of the link 
