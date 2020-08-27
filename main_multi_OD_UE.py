@@ -9,11 +9,10 @@ Developments:
 - solution algorithm based upon Sheffi (1985), page 119-120 (Aug 2018)
 - extended to networks with multiple ODs (Sep 2018)
 - included calculation of total network cost (Feb 2019)
-- calculate system optimum solution (Feb 2019)
 
 
-@author: Andy Chow 
-Revised: Feb 2019
+@author: Andy Chow at CityU HK 
+Revised: Jul 2020
 
 
 '''
@@ -65,27 +64,6 @@ def PathCost(fp,tf,cap,LinkSeq):
                 del a
         PathCost.append(cost)
     return PathCost
-
-
-
-# Social Path cost (and Link flow) calculation (for SO calculation) 
-def SocialPathCost(fp,tf,cap,LinkSeq):
-    SocialPathCost = []                  # path cost 
-    
-    # Converting path flows to link flows 
-    Link_f = PathToLink_f(fp,tf,LinkSeq)
-        
-    # update of path costs 
-    for p in list(range(0,len(LinkSeq))):
-        cost = 0
-        for i in list(range(0,len(LinkSeq[p]))):
-            if LinkSeq[p][i] > 0:
-                a = int(LinkSeq[p][i])-1    # link id in Python (starting from zero)
-                cost = cost+BPR_function(Link_f[a],tf[a],cap[a])+\
-                          d_BPR_function(Link_f[a],tf[a],cap[a])*Link_f[a]
-                del a
-        SocialPathCost.append(cost)
-    return SocialPathCost
 
 
 
