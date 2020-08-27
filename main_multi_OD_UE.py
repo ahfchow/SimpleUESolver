@@ -81,7 +81,7 @@ def ShortestPath(PathC,OD_index,LinkSeq):
     return LeastPath, LeastPathCost
 
 
-# Golden section line search (Step 3) 
+# Golden section line search (Step 3)
 def golden_section(lower, upper, merror, tf, fp, fp_dir):
     seg = (np.sqrt(5)-1)/2
     error = 1000
